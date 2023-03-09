@@ -188,6 +188,11 @@ body {
 /* SECAO SUPERIOR */
 
 .superior__secao__container {
+    display: flex; /*Inserção do display flex para organização dos elementos na página*/
+    align-items: center;/*alinhamento dos elementos*/
+    white-space: nowrap; /*Organização dos nomes dos itens respeitando a margem e não quebrando entre a escrita deles*/
+    overflow: scroll; /*Colocação de uma barra de scroll para rolagem dos elementos*/
+    gap: 15px; /*Espaçamento entre os elementos*/
     height: 63px;
     color: white;
     font-size: 16px;
