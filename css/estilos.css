@@ -25,11 +25,6 @@ body {
 /* CABEÇALHO */
 
 .cabecalho__container {
-    display: flex; /*Definido tipo de display para o cabeçálho*/
-    justify-content: space-between; /*Organização dos elementos dando o mesmo espaçamento dentro da div*/
-    align-items: center; /* descolamento dos elementos do topo*/
-    position: fixed; /*POsicionamento fixo para que o cabeçalho acompanhe o scroll da página*/
-    top: 0;
     background-color: white;
     height: 80px;
     width: 100%;
@@ -100,36 +95,9 @@ body {
 /* MENU LATERAL */
 
 .menu__container {
-    position: fixed;
-    bottom: 0%;
-    height: 74px;
-    width: 100%;
     background-color: var(--azul-escuro);
     font-size: 14px;
 }
-
-.menu__lista {
-    margin-top: 5px;
-   display: flex;
-   justify-content: space-around;
-}
-
-.menu__lista:nth-child(2),
-.menu__lista:nth-child(3),
-.menu__lista:nth-child(4){
-    display: none;
-}
-
-.menu__lista li {
-    align-self: center;    
-}
-
-.menu__itens {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-}
-
 
 .menu__itens:hover {
     background-color: var(--azul-medio);
@@ -215,11 +183,6 @@ body {
 /* SECAO SUPERIOR */
 
 .superior__secao__container {
-    display: flex; /*Inserção do display flex para organização dos elementos na página*/
-    align-items: center;/*alinhamento dos elementos*/
-    white-space: nowrap; /*Organização dos nomes dos itens respeitando a margem e não quebrando entre a escrita deles*/
-    overflow: scroll; /*Colocação de uma barra de scroll para rolagem dos elementos*/
-    gap: 15px; /*Espaçamento entre os elementos*/
     height: 63px;
     color: white;
     font-size: 16px;
@@ -273,10 +236,6 @@ body {
 /* RODAPÉ */
 
 .rodape__container {
-    display: flex;
-    /* flex-direction: column;
-    flex-wrap: wrap; */
-    flex-flow: column wrap;
     width: 100%;
     height: 875px;
     color: var(--cinza-texto);
@@ -291,22 +250,10 @@ body {
     padding: 10px 0 20px 0;
 }
 
-.cabecalho__pesquisar__item {
-    display: none;
-}
-
 @media(min-width: 834px) {
 
     body {
         height: 100vh;
-    }
-
-    .cabecalho__pesquisar__item {
-        display: block;
-    }
-
-    .rodape__container {
-        justify-content: space-between;   
     }
 
     /* ESTILOS DO MENU LATERAL */
